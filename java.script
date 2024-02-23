@@ -1,0 +1,20 @@
+const button = document.getElementById("Light");
+
+button.add EventListener("click", ChangeColor);
+
+function ChangeColor() {
+    if(button.classList.contains("btn-danger")) {
+        button.classList.remove("btn-danger");
+        button.classList.add("btn-warning");
+    } else if(button.classList.contains("btn-warning")) {
+        button.classList.remove("btn-warning");
+        button.classList.add("btn-success");
+    } else {
+        button.classList.remove("btn-succes");
+        button.classList.add("btn-danger");
+    }
+}
+
+setInterval(function ChangeColor()) {
+    ChangeColor(document.getElementById("Light"));
+}, 10000);
