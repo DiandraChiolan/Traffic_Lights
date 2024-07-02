@@ -17,4 +17,4 @@ function ChangeColor() {
 
 setInterval(function ChangeColor()) {
     ChangeColor(document.getElementById("Light"));
-}, 10000);
+}, 1000);
